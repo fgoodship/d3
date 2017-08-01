@@ -26,6 +26,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
+			<div class="col-m-8" style="background-color:blue;">
+				
+			</div>
+			<div class="col-m-4" style="background-color:red">
+				
+			</div>
 
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>

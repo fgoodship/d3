@@ -15,7 +15,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-
+			<div style="background-color:blue;" class="col-m-5">
+			</div>
+			<div style="background-color:red;" class="col-m-5">
+			</div>
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 

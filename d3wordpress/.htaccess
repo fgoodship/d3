@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /d3wordpress/
+RewriteBase /d3-dev-1/d3wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /d3wordpress/index.php [L]
+RewriteRule . /d3-dev-1/d3wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
