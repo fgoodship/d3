@@ -18,7 +18,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost:8888/d3-dev-1/d3wordpress/",
+    proxy: "http://localhost:8888/d3wordpress/",
     notify: false
 };
 

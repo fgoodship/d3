@@ -7,56 +7,34 @@
  * @package understrap
  */
 
+  get_header();
 ?>
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title"
-		content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php wp_head(); ?>
-</head>
-<body>
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-</style>
 
-	<div class="container-fluid">
-  <div class='row header-col-2'>
-    <div class="text-left col-lg-6">
-      <h2>Launch your Career</h2>
-      <h3>Cross the boundaries of your discipline by solving real-world challenges and developing innovative solutions for companies and researchers.</h3>
-      <button type="button" class="btn">Basic</button>
-    </div>
-    <div class="image-right col-lg-6">
-      <img src="https://www.pets4homes.co.uk/images/breeds/363/large/c6386374421d45cd1cee8866702c1b4b.jpg" alt="">
-    </div>
-  </div>
-</div>
+
+<?php
+  get_template_part('section-templates/header-section');
+?>
+
+
 
 <div class="row justify-content-center">
     <div class="blog col-sm-3">
-        <div class="img"></div>
-        <h2>Blog Title</h2>
-        <p>Lorem  consectetur animi iusto illo aliquam, exercitationem. Explicabo, distinctio.</p>
+        <div class="img"> <img src="<?php the_field('col_1_img')?>" /> </div>
+        <h2> <?php the_field("col_1_title") ?></h2>
+        <p><?php the_field("col_1_body") ?></p>
     </div>
     <div class="blog col-sm-3">
-      <div class="img"></div>
-        <h2>Blog Title</h2>
-        <p>Lorem  consectetur animi iusto illo aliquam, exercitationem. Explicabo, distinctio.</p>
+      <div class="img"> <img src="<?php the_field('col_2_img')?>" /> </div>
+        <h2> <?php the_field("col_2_title") ?></h2>
+        <p><?php the_field("col_2_body") ?></p>
     </div>
     <div class="blog col-sm-3">
-      <div class="img"></div>
-        <h2>Blog Title</h2>
-        <p>Lorem  consectetur animi iusto illo aliquam, exercitationem. Explicabo, distinctio.</p>
+     <div class="img"> <img src="<?php the_field('col_3_img')?>" /> </div>
+        <h2> <?php the_field("col_3_title") ?></h2>
+        <p><?php the_field("col_3_body") ?></p>
     </div>
 </div>
+
 
 <div class="row">
   <div class="list-section col-sm-3">
